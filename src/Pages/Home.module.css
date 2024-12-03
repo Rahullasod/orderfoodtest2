@@ -1,0 +1,554 @@
+.homepage{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin: 0px 100px;
+}
+/* top section  */
+.bannertab{
+    display: flex;
+    background-color: #FBFBFB;
+    padding-top: 45px;
+    padding-left: 57px;
+    border-radius: 12px;
+    border: 1px solid #00000033;
+    z-index: -10;
+}
+.bannerheading{
+    color: #03081F;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 66px;  
+}
+.bannerform{
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    justify-content: center;
+    width: 40%;
+}
+.searchform{
+    position: relative;
+    width: 80%;
+    z-index: 12;
+}
+.searchform label{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 66px;  
+}
+.searchform input{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 66px;
+    padding: 0px 30px;
+    width: 100%;
+    border-radius: 120px;
+    border: 1px solid #00000066;  
+}
+.searchform input:focus{
+    outline-color: #FC8A06;
+}
+.searchform input::placeholder{
+    font-size: 15px;
+    font-weight: 400;   
+    color: #000000CC;
+}
+.searchbtn{
+    background-color: #FC8A06;
+    padding: 1px 65px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 1px;
+    border: none;  
+    border-radius: 120px;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.bannerimg{
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+}
+.bannerimgtab{
+    width: 25%;
+    z-index: +11;
+    position: relative;
+}
+
+.bannerreview{
+    width: 35%;
+    background-color: #FC8A06;
+    border-radius: 282.5px 0px 12px 0px;  
+    padding: 40px;
+    position: relative;
+    z-index: -2;
+    padding-top: 60px;
+}
+.bannerimg2{
+    position: absolute;
+    width: 377px;
+    height: 455px;
+    bottom: 0px;
+    left: -80px;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.reviewtab{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.reviewstabs{
+    z-index: +10;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 40px;
+    position: relative;
+    width: 100%;
+}
+.reviewlogotab{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* align-items: self-start; */
+}
+.reviewlogo{
+    width: 70px;
+    height: 15px;
+    object-fit: contain;
+}
+.reviewheading{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.reviewtext{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000CC;
+}
+.reviewnotab{
+    position: absolute;
+    right: 20px;
+    top: -70px;
+}
+.reviewnumber{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 102px;
+    color: #00000000;
+    -webkit-text-stroke: 0.01px #Fff;
+}
+
+/* tabs section */
+.tabheading{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;   
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabbtncontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    column-gap: 10px;
+  }
+  
+  .tabbutton {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 18px 10px;
+    border-radius: 120px;
+    width: 25%;
+    background-color: #00000000;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+  }
+  .tabbutton:hover{
+    color: #FC8A06;
+    font-weight: 600;
+    border: 1px solid #FC8A06;
+  }
+  /* .tabbutton:focus{
+    color: #FC8A06;
+    font-weight: 600;
+    border: 1px solid #FC8A06;
+    outline-color: #FC8A06;
+  } */
+  
+  .tabbutton.active {
+    color: #FC8A06;
+    font-weight: 600;
+    border: 1px solid #FC8A06;
+    outline-color: #FC8A06;
+  }
+  
+.tabContent {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scrollbar-width: 0px; /* For Firefox: makes the scrollbar thinner */
+    scrollbar-color: #00000000; /* For Firefox: customize the scrollbar colors */
+    /* justify-content: center; */
+}
+
+.tabContent::-webkit-scrollbar {
+    height: 0px; /* Set the height of the scrollbar */
+}
+
+.tabContent::-webkit-scrollbar-track {
+    background: transparent; /* Track background */
+}
+
+.tabContent::-webkit-scrollbar-thumb {
+    background-color: #00000000;
+    border-radius: 0px;
+}
+ 
+.restaurentcard {
+    min-width: 300px;
+    flex-shrink: 0; 
+    cursor: pointer;
+    position: relative;
+    width: 500px;
+    height: 325px;
+    border-radius: 12px;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: space-between; 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.restaurentcard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%);
+    z-index: 1;
+    border-radius: inherit;
+}
+
+  .discounttext{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;  
+    color: #ffffff;
+    background-color: #03081F;
+    padding: 15px;
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    z-index: 2;
+  }
+  .restrocardtext{
+    z-index: 2;
+    align-self: self-end ;
+    color: #ffffff;
+  }
+  .restrocardtext p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: #FC8A06;
+}
+.restrocardtext h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+/* Dishes catagory section */
+
+.dishescontainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.dishescontainer h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.dishes{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.dishcard{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    border: 1px solid #0000001A;
+}
+.dishimg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.dishcardtext{
+    padding: 15px;
+    text-align: left;
+}
+.dishcardtext h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.dishcardtext p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #FC8A06; 
+}
+
+/* Popular Restaurants */
+
+
+/*Order Banner*/
+.orderbannerimg{
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* Get started */
+.getstartedcard{
+    position: relative;
+    width: 50%;
+    height: 425px;
+    border-radius: 12px;
+    padding: 40px 70px;
+    display: flex;
+    justify-content: space-between; 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.getstartedcard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%);
+    z-index: 1;
+    border-radius: inherit;
+}
+.getstartedcard h3{
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px; 
+    padding: 13px 20px;
+    background-color: #ffffff;  
+    border-radius: 0px 0px 12px 12px;   
+}
+.getstarttextbox{
+    z-index: 2;
+    align-self: self-end;
+}
+.getstarttextbox p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;    
+}
+.getstarttextbox h1{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 66px;
+    color: #ffffff;
+}
+.getstarttextbox button{
+    border-radius: 120px;
+    padding: 15px 50px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    background-color: #FC8A06;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+/* Know More About Us */
+.knowmorecontainer{
+    padding: 115px 120px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+}
+.kmtabs{
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.kmtabs h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;   
+}
+.kmtabsbtns{
+    display: flex;
+    column-gap: 10px;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.kmtabsbtns p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.kmtabsbtns h1{
+    padding: 10px 30px;
+    border-radius: 120px;
+    border: 1px solid #FC8A06;
+    font-size: 16px;
+    font-weight: 700 important;
+}
+.kmcontent{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 65px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    padding-right:30px;
+}
+.kmfqlists{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: 40%;
+    text-align: center;
+}
+.kmfqlists h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.02em;    
+}
+.kmfqlists h4{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    padding: 18px 0px; 
+    border-radius: 120px;
+    background-color: #FC8A06; 
+    text-align: center;
+}
+.kmfqrightcont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px
+}
+.kmfqrightcont p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;   
+}
+.kmfqordercard{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    background-color: #D9D9D9;
+    border-radius: 12px;
+    padding: 25px;
+    padding-top: 35px;
+}
+.kmfqordercard h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+}
+.kmfqordercard h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.02em; 
+    text-align: center;
+}
+/* All Numbers */
+.allnumbers{
+    padding: 35px 35px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    background-color: #FC8A06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbercard{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: #fff;
+    padding: 0px 50px;
+    border-right: 1px solid #D9D9D9;
+    justify-content: center;
+    align-items: center;
+}
+.numbercard h2{
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;  
+}
+.numbercard h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;   
+}
+
+  

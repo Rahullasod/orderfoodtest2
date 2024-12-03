@@ -1,0 +1,68 @@
+.PCcontainer {
+    display: flex;
+    column-gap: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #0000001A;
+    box-shadow: 5px 5px 34px 0px #00000040;
+    cursor: pointer;
+    align-items: center;
+    min-width: 30%;
+    max-width: 100%; 
+  
+  }
+.PCdetails{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 55%;
+}
+.PCdetails h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    color: #03081F;
+}
+.PCdetails h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
+}
+.PCdetails p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+.PCimgbox{
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    width: 45%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.AddToCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 50%;
+    height: 40%;
+    border-radius: 45px 0px 12px 0px;
+    opacity: 0.9;    
+    margin-bottom: -2px;
+}
+.AddToCartimg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}

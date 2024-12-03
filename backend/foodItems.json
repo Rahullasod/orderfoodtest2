@@ -1,0 +1,80 @@
+[
+    {
+        "CategoryName": "Burgers",
+        "name": "Royal Cheese Burger with extra Fries",
+        "img": "https://drive.google.com/file/d/15Wqwed-HndczcvCrB2quTt2yp2E0Hu6i/view?usp=sharing",
+        "Price": "120",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium"
+    },
+    {
+        "CategoryName": "Burgers",
+        "name": "The classics for 3",
+        "img": "https://drive.google.com/file/d/15Wqwed-HndczcvCrB2quTt2yp2E0Hu6i/view?usp=sharing",
+        "Price": "120",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Burgers",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/15Wqwed-HndczcvCrB2quTt2yp2E0Hu6i/view?usp=sharing",
+        "Price": "120",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Fries",
+        "name": "Royal Cheese Burger with extra Fries",
+        "img": "https://drive.google.com/file/d/1Q8sA949H3tKq9WLnKoeDzgwoXsg-Hfu0/view?usp=sharing",
+        "Price": "120",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Fries",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/1Q8sA949H3tKq9WLnKoeDzgwoXsg-Hfu0/view?usp=sharing",
+        "Price": "70",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Fries",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/1Q8sA949H3tKq9WLnKoeDzgwoXsg-Hfu0/view?usp=sharing",
+        "Price": "70",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Fries",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/1Q8sA949H3tKq9WLnKoeDzgwoXsg-Hfu0/view?usp=sharing",
+        "Price": "70",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Cold Drinks",
+        "name": "Royal Cheese Burger with extra Fries",
+        "img": "https://drive.google.com/file/d/1tAwH2BLTbjOz6HAVLXB5cuzFkcN5E6ol/view?usp=sharing",
+        "Price": "40",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Cold Drinks",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/1bqH-scYGtfz-cQHuaMocoKs8Rl2ptWwh/view?usp=sharing",
+        "Price": "40",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Cold Drinks",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/1wxEMmMCLCwBIoeOCz4nqgrjslI0rGO5q/view?usp=sharing",
+        "Price": "40",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    },
+    {
+        "CategoryName": "Cold Drinks",
+        "name": "The classics for 4",
+        "img": "https://drive.google.com/file/d/1wxEMmMCLCwBIoeOCz4nqgrjslI0rGO5q/view?usp=sharing",
+        "Price": "40",
+        "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks"
+    }
+  
+]

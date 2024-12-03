@@ -1,0 +1,261 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #F9F9F9;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #0000001C;
+}
+
+.sharecontainer {
+    padding: 35px 15px;
+    border-radius: 12px;
+    background-color: #FC8A06;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.shareimg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.sharecontainer p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+
+.copybtn {
+    border-radius: 120px;
+    background-color: #fff;
+    padding: 10px 11.5px;
+    color: #FC8A06;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    border: none;
+    width: 30%;
+}
+
+.copybtn:focus {
+    outline: none
+}
+
+.mybasketcontainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.mybasket {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    background-color: #028643;
+    padding: 40px 50px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.mybasket h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.mybasketimg {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.items {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    padding: 5px 21px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #00000033;
+}
+
+.itemcount {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: #FC8A06;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    border-radius: 120px;
+}
+
+.itemcount:focus {
+    outline: none;
+}
+
+.itemdetails {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    justify-content: start;
+}
+
+.itemprice {
+    color: #028643;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.itemname {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.itemdescription {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.itemdel {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.pricebreakup {
+    border-bottom: #00000033 1px solid;
+    padding: 25px 20px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.pricebreakupdetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricebreakupdetails h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.pricebreakupdetails p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.totalpaybtn {
+    background-color: #FC8A06CC;
+    border-radius: 8px;
+    padding: 18px 10px;
+    padding-left: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin: 0px 15px;
+}
+
+.totalpaybtn p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.totalpaybtn h1 {
+    font-size: 36px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.totalpaybtn:focus {
+    outline: none;
+}
+
+.freeitembtn p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.freeitembtn img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.freeitembtn {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    border: 1px solid #CFCFCF;
+    padding: 15px 10px;
+    padding-left: 40px;
+    border-radius: 120px;
+    margin: 0px 15px;
+}
+
+.DelNCollcontainer {
+    display: flex;
+    padding: 15px;
+    column-gap: 20px;
+    border-top: 1px solid #00000033;
+}
+
+.Deliverybox {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #EEEEEE;
+    border: 1px solid #00000033;
+}
+
+.Collectbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-left: 1px solid #00000033;
+}
+
+.checkoutbtn {
+    background-color: #028643;
+    margin: 0px 15px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    column-gap: 55px;
+    padding: 20px;
+    align-items: center;
+    border: none;
+}
+
+.checkoutbtn h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}

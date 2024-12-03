@@ -1,0 +1,159 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-left:  80px;
+    margin-right: 80px;
+    margin-bottom: 45px;
+}
+.navcart{
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 0px 0px 12px 12px;
+    border: 1px solid #0000001A;
+    background-color: #FAFAFA;
+}
+.promocode{
+    margin-top: 25px;
+    margin-left: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+}
+.address{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    align-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+}
+.location{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.cart{
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #028643;
+    color: #FFFFFF;
+    width: 30%;
+    border-radius: 0px 0px 12px 12px;
+    border: 1px solid #0000001A;
+}
+.basket{
+    display: flex;
+    column-gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    align-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 16px;
+    font-weight: 600;  
+}
+.emptytab {
+    /* width: 40%; */
+    border-right: 1px solid #FFFFFF; 
+  }
+  .basketpng{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+.forward{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 15%;
+    border-left: 1px solid #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+}
+.forwardpng{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+.menustab{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    width: 60%;
+}
+
+.menu{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #000000;
+    padding: 9px 15px;
+    width: 20%;
+    border-radius: 120px;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+}
+.menu:focus{
+    padding: 9px 15px;
+    border-radius: 120px;
+    background-color: #FC8A06;
+    color: #FFFFFF;
+    border: none;
+}
+.menu:hover{
+    padding: 9px 15px;
+    border-radius: 120px;
+    background-color: #FC8A06;
+    color: #FFFFFF;
+    border: none;
+}
+.logoimg{
+    width: 215px;
+    height: 50px;
+    object-fit: contain;
+}
+.logintab{
+    width: 15%;
+    border-radius: 120px;
+    padding: 17px 26px;
+    background-color: #03081F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.loginbtn{
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;  
+}
+.loginlink{
+    color: #FFFFFF;
+}
+.userimg{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+

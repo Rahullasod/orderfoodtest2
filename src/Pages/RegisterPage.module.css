@@ -1,0 +1,166 @@
+.Maincontainer{
+    padding: 30px;
+    display: flex;
+    column-gap: 30px;
+}
+.containerleft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.welcomemsg{
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.description{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 100%;
+}
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+}
+.formgroup label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+.formgroup input{
+    padding: 16px 20px;
+    border-radius: 100px;
+    border: 1px solid #00000066;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+
+.formgroup input:focus{
+    outline-color: #FC8A06;
+}
+.formgroup input::placeholder{
+    color: #8897AD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+.continuebtn{
+    background-color: #FC8A06;
+    border-radius: 100px;
+    padding: 16px 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.alreadyaccounttext{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.01em;
+    text-align: center;  
+}
+.signinlink{
+    color: #FC8A06;
+    cursor: pointer;
+}
+
+
+
+
+.containerright{
+    width: 50%;
+    position: relative;
+}
+.rightimg{
+    width: 100%;
+    height: 1076px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .containerright{
+        display: none;
+    }
+    .Maincontainer{
+        padding: 50px 20px;
+    }
+
+/* Left Side */
+
+    .containerleft{
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .logo{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logoimg{
+        width: 181.28px;
+        height: 44.69px;
+    }
+    
+    .welcomemsg{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    
+    .description{
+        font-size: 16px;
+    }
+    .signupform{
+        row-gap: 20px;
+        margin-top: 40px;
+    }
+    
+    .formgroup{
+        row-gap: 7px;
+    }
+    
+    .formgroup label{
+        font-size: 13px;
+    }
+    .formgroup input{
+        font-size: 13px;
+    }
+    
+    .continuebtn{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alreadyaccounttext{
+        font-size: 15px;
+    }
+    .signinlink{
+        font-size: 15px;
+    }
+}
