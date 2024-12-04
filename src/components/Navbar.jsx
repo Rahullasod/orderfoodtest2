@@ -1,8 +1,16 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+
+const navigate = useNavigate();
+const handleLogout = ()=>{
+  localStorage.removeItem("authToken");
+  navigate("/loginuser");
+}
+
+
   return (
     <div className={styles.navbar} >
       <div className={styles.navcart} >
@@ -21,7 +29,7 @@ const Navbar = () => {
           ) : ""}
 
           <span className={styles.emptytab} ></span>
-          <span className={styles.forward} > <img className={styles.forwardpng} src="/assets/Forward Button.png" alt="" /> </span>
+          <span className={styles.forward} > <img className={styles.forwardpng} src="/assets/Forwarddownwhite.png" alt="" /> </span>
         </div>
       </div>
       <div className={styles.navmenu} >
@@ -33,13 +41,21 @@ const Navbar = () => {
           <Link to="/restaurants" className={styles.menu}>Restaurants</Link>
           <Link to="/track-order" className={styles.menu}>Track Order</Link>
         </div>
-        <div className={styles.logintab} >
-          <div className={styles.loginbtn} >
-            <img className={styles.userimg} src="/assets/Male User.png" alt="" />
-            <Link className={styles.loginlink} to="/loginuser" >Login</Link>/
-            <Link className={styles.loginlink} to="/createuser" >Signup</Link>
+        {(!localStorage.getItem("authToken")) ? (
+          <div className={styles.logintab} >
+            <div className={styles.loginbtn} >
+              <img className={styles.userimg} src="/assets/Male User.png" alt="" />
+              <Link className={styles.loginlink} to="/loginuser" >Login</Link>/
+              <Link className={styles.loginlink} to="/createuser" >Signup</Link>
+            </div>
           </div>
-        </div>
+        ) :
+          <div style={{ border: "1px solid red"}} className={styles.logintab} >
+            <div className={styles.loginbtn} >
+              <Link className={styles.loginlink} to="/" onClick={handleLogout} >Log Out</Link>
+            </div>
+          </div>
+        }
       </div>
     </div>
   )

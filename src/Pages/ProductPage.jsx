@@ -118,34 +118,6 @@ const ProductPage = () => {
           <div className={styles.productcatagory} >
             <h1 className={styles.catagorytitle} >Burgers</h1>
             <div >
-
-              {/* {
-            foodCat !== [] 
-              ? foodCat.map((data) => {
-                return (
-                  <div key={data._id}> 
-                    <div>
-                      {data.CategoryName}
-                    </div>
-                    <hr />
-                    {
-                      foodItem !== [] 
-                        ? foodItem
-                          .filter((item) => item.CategoryName === data.CategoryName) 
-                          .map((filterItems) => {
-                            return (
-                              <div key={filterItems._id}> 
-                                <ProductCard></ProductCard> 
-                              </div>
-                            );
-                          })
-                        : <div>No Data</div> 
-                    }
-                  </div>
-                );
-              })
-              : "loading" 
-          } */}
               {
                 foodCat.length > 0
                   ? foodCat.map((data) => {

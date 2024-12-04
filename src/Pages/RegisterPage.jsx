@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './RegisterPage.module.css';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -47,19 +47,19 @@ const onChange = (event) => {
           <form className={styles.signupform} onSubmit={handleSubmit} >
             <div className={styles.formgroup}>
               <label htmlFor="name">Name</label>
-              <input type="text" id="" placeholder="eg. John A" name='name' value={credentials.name} onChange={onChange} />
+              <input type="text" id="name" placeholder="eg. John A" name='name' value={credentials.name} onChange={onChange} />
             </div>
             <div className={styles.formgroup}>
               <label htmlFor="phonenumber">Phone Number</label>
-              <input type="number" id="" placeholder="Enter your 10 digit mobile number" name='phonenumber' value={credentials.phonenumber} onChange={onChange} />
+              <input type="number" id="phonenumber" placeholder="Enter your 10 digit mobile number" name='phonenumber' value={credentials.phonenumber} onChange={onChange} />
             </div>
             <div className={styles.formgroup}>
               <label htmlFor="email">Email</label>
-              <input type="email" id="" placeholder="Example@email.com" name='email' value={credentials.email} onChange={onChange} />
+              <input type="email" id="email" placeholder="Example@email.com" name='email' value={credentials.email} onChange={onChange} />
             </div>
             <div className={styles.formgroup}>
               <label htmlFor="password">Password</label>
-              <input type="password" id="" placeholder="At least 5 characters" name='password' value={credentials.password} onChange={onChange} />
+              <input type="password" id="password" placeholder="At least 5 characters" name='password' value={credentials.password} onChange={onChange} />
             </div>
             <button type="submit" className={styles.continuebtn}>
               Continue

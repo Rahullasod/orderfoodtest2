@@ -51,11 +51,11 @@ const onChange = (event) => {
           <form className={styles.signupform} onSubmit={handleSubmit} >
             <div className={styles.formgroup}>
               <label htmlFor="email">Email</label>
-              <input type="email" id="" placeholder="Example@email.com" name='email' value={credentials.email} onChange={onChange} />
+              <input type="email" id="email" placeholder="Example@email.com" name='email' value={credentials.email} onChange={onChange} />
             </div>
             <div className={styles.formgroup}>
               <label htmlFor="password">Password</label>
-              <input type="password" id="" placeholder="At least 5 characters" name='password' value={credentials.password} onChange={onChange} />
+              <input type="password" id="password" placeholder="At least 5 characters" name='password' value={credentials.password} onChange={onChange} />
             </div>
             <button type="submit" className={styles.continuebtn}>
               Sign In

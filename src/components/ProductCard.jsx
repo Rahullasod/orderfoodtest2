@@ -2,7 +2,11 @@ import React from 'react'
 import styles from './ProductCard.module.css';
 
 const ProductCard = (props) => {
-  return (
+    const handleAddToCart = () =>{
+        
+    };
+
+    return (
     <>
         <div className={styles.PCcontainer} >
             <div className={styles.PCdetails} >
@@ -15,7 +19,7 @@ const ProductCard = (props) => {
             style={{ backgroundImage: `url(${props.foodImage})` }}
             >
                 <div className={styles.AddToCart} >
-                    <img className={styles.AddToCartimg} src="assets/add to cart.png" alt="Add to Cart" />
+                    <img onClick={handleAddToCart} className={styles.AddToCartimg} src="assets/add to cart.png" alt="Add to Cart" />
                 </div>
             </div>
         </div>
