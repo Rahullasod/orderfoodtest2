@@ -45,13 +45,13 @@ const reducer = (state, action) => {
                             ? { ...item, count: item.count + 1 }
                             : item
                     ),
-                    isCartVisible: true, // Ensure cart remains visible
+                    isCartVisible: true, 
                 };
             }
             return {
                 ...state,
                 cart: [...state.cart, { ...action.payload, count: 1 }],
-                isCartVisible: true, // Ensure cart remains visible
+                isCartVisible: true, 
             };
 
         case "TOGGLE_CART":
