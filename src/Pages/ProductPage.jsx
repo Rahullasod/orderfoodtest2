@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
@@ -6,6 +6,7 @@ import PopularRestro from '../components/PopularRestro';
 import styles from './ProductPage.module.css';
 import Map from '../components/Map';
 import Cart from '../components/Cart';
+import { CartContext } from '../components/ContextReducer';
 // import Reviews from '../components/Reviews';
 
 
@@ -31,6 +32,23 @@ const ProductPage = () => {
   useEffect(() => {
     loadData();
   }, [])
+
+
+  const { state, dispatch } = useContext(CartContext);
+
+  const handleAddToCart = (item) => {
+    dispatch({
+        type: 'ADD_TO_CART',
+        payload: {
+            id: item._id,
+            name: item.name,
+            price: item.Price,
+            description: item.description,
+            img: item.img,
+        },
+    });
+};
+
 
   return (
     <>
@@ -118,7 +136,36 @@ const ProductPage = () => {
           <div className={styles.productcatagory} >
             <h1 className={styles.catagorytitle} >Burgers</h1>
             <div >
+
               {
+                foodCat.length > 0
+                  ? foodCat.map((data) => (
+                    data.CategoryName === "Burgers" && (
+                      <div className={styles.burgerCards} key={data._id}>
+                        {
+                          foodItem.length > 0
+                            ? foodItem
+                              .filter((item) => item.CategoryName === "Burgers")
+                              .map((filterItems) => (
+                                <div className={styles.itemsCard} key={filterItems._id}>
+                                  <ProductCard
+                                    foodName={filterItems.name}
+                                    foodPrice={filterItems.Price}
+                                    foodImage={filterItems.img}
+                                    foodDescription={filterItems.description}
+                                    onAddToCart={() => handleAddToCart(filterItems)}
+                                  />
+                                </div>
+                              ))
+                            : "No Data"
+                        }
+                      </div>
+                    )
+                  ))
+                  : "No Categories Found"
+              }
+
+              {/* {
                 foodCat.length > 0
                   ? foodCat.map((data) => {
 
@@ -133,12 +180,15 @@ const ProductPage = () => {
                                   return (
                                     <div className={styles.itemsCard} key={filterItems._id}>
                                       <ProductCard
+
                                         foodName={filterItems.name}
                                         foodPrice={filterItems.Price}
                                         foodImage={filterItems.img}
                                         foodDescription={filterItems.description}
+
                                       ></ProductCard>
                                     </div>
+                          
                                   );
                                 })
                               : "No Data"
@@ -148,14 +198,43 @@ const ProductPage = () => {
                     );
                   })
                   : "loading"
-              }
+              } */}
 
             </div>
           </div>
           <div style={{ marginTop: "120px" }} className={styles.productcatagory} >
             <h1 style={{ color: "#FC8A06" }} className={styles.catagorytitle} >Fries</h1>
             <div >
+
               {
+                foodCat.length > 0
+                  ? foodCat.map((data) => (
+                    data.CategoryName === "Fries" && (
+                      <div className={styles.burgerCards} key={data._id}>
+                        {
+                          foodItem.length > 0
+                            ? foodItem
+                              .filter((item) => item.CategoryName === "Fries")
+                              .map((filterItems) => (
+                                <div className={styles.itemsCard} key={filterItems._id}>
+                                  <ProductCard
+                                    foodName={filterItems.name}
+                                    foodPrice={filterItems.Price}
+                                    foodImage={filterItems.img}
+                                    foodDescription={filterItems.description}
+                                    onAddToCart={() => handleAddToCart(filterItems)}
+                                  />
+                                </div>
+                              ))
+                            : "No Data"
+                        }
+                      </div>
+                    )
+                  ))
+                  : "No Categories Found"
+              }
+
+              {/* {
                 foodCat.length > 0
                   ? foodCat.map((data) => {
 
@@ -174,8 +253,10 @@ const ProductPage = () => {
                                         foodPrice={filterItems.Price}
                                         foodImage={filterItems.img}
                                         foodDescription={filterItems.description}
+
                                       ></ProductCard>
                                     </div>
+                              
                                   );
                                 })
                               : "No Data"
@@ -185,14 +266,43 @@ const ProductPage = () => {
                     );
                   })
                   : "loading"
-              }
+              } */}
 
             </div>
           </div>
           <div style={{ marginTop: "120px" }} className={styles.productcatagory} >
             <h1 style={{ color: "#FC8A06" }} className={styles.catagorytitle} >Cold Drinks</h1>
             <div >
+
               {
+                foodCat.length > 0
+                  ? foodCat.map((data) => (
+                    data.CategoryName === "Cold Drinks" && (
+                      <div className={styles.burgerCards} key={data._id}>
+                        {
+                          foodItem.length > 0
+                            ? foodItem
+                              .filter((item) => item.CategoryName === "Cold Drinks")
+                              .map((filterItems) => (
+                                <div className={styles.itemsCard} key={filterItems._id}>
+                                  <ProductCard
+                                    foodName={filterItems.name}
+                                    foodPrice={filterItems.Price}
+                                    foodImage={filterItems.img}
+                                    foodDescription={filterItems.description}
+                                    onAddToCart={() => handleAddToCart(filterItems)}
+                                  />
+                                </div>
+                              ))
+                            : "No Data"
+                        }
+                      </div>
+                    )
+                  ))
+                  : "No Categories Found"
+              }
+
+              {/* {
                 foodCat.length > 0
                   ? foodCat.map((data) => {
 
@@ -211,6 +321,7 @@ const ProductPage = () => {
                                         foodPrice={filterItems.Price}
                                         foodImage={filterItems.img}
                                         foodDescription={filterItems.description}
+
                                       ></ProductCard>
                                     </div>
                                   );
@@ -222,13 +333,13 @@ const ProductPage = () => {
                     );
                   })
                   : "loading"
-              }
+              } */}
 
             </div>
           </div>
         </div>
-        <div className={styles.rightcontainer} >
-          <Cart />
+        <div className={styles.rightcontainer}>
+          {state.isCartVisible && <Cart />}
         </div>
       </div>
 

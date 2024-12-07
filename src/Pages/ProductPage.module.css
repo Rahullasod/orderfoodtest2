@@ -178,7 +178,7 @@
 
 .restaurentcard {
     width: calc(33.33% - 20px);
-    min-width: 400px;
+   
     min-height: 330px;
     flex-shrink: 0;
     cursor: pointer;
@@ -193,6 +193,17 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+@media screen and (max-width: 1700px) {
+    .restaurentcard{
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (max-width: 1700px) {
+    .itemsCard{
+        min-width: calc(50% - 20px);
+    }
 }
 
 .restaurentcard::before {
@@ -278,7 +289,8 @@
 
 .itemsCard {
     width: calc(33.3% - 20px);
-    min-width: 400px;
+    
+    
 }
 
 .burgerCards {
@@ -373,9 +385,10 @@
 }
 /* Cart section right side */
 .leftcontainer{
-    width: calc(75% - 75px);
+    
 }
 .rightcontainer{
     /* border: 1px solid red; */
-    
+    min-width: 350px;
+    /* display: none; */
 }

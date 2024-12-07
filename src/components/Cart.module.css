@@ -13,6 +13,7 @@
     border-radius: 12px;
     background-color: #FC8A06;
     display: flex;
+    column-gap: 10px;
     align-items: center;
     color: #fff;
 }
@@ -25,9 +26,9 @@
 
 .sharecontainer p {
     margin-left: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21.6px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .copybtn {
@@ -84,8 +85,8 @@
 }
 
 .itemcount {
-    width: 45px;
-    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
     border: none;
     background-color: #FC8A06;
     font-size: 24px;
